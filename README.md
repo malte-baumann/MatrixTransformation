@@ -27,6 +27,8 @@ __axis__ specifies the Axis. Can be either ('x', 'y', 'z').
 In addition to these, there is one Method for Points.\
 **P(x,y,z)** generates a 4x1 Matrix. The fourth Value will be by default 1 but can be specified.
 
+Keep in Mind that something like ```S(1/3, 1/3, 1/3)``` in Ruby will be converted to ```S(0,0,0)``` due to Integer. You need to use float for that kind.
+
 ### Internal Methods
 
 There are some 'internal' Methods which are for internal use but may be used like any other Method.
